@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Hangman</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Andrew Ang">
+        <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src = "script.js"></script>
+    </head>
+    <body style="background-color:#EE7600">
+        <div class="container">
+            <h1 style = "text-align: center">Hangman</h1>
+            <form>
+                <div class="form-group">
+                <input type = "text" id="guess" placeholder="Guess a letter or word">
+                <button type="button" onclick="hangman()">Guess</button>
+                </div>
+            </form>
+            <h4 style = "text-align: center">Game Board</h4>
+            <div class="jumbotron" style="background-color:#f4a460">
+                <div id="gameBoard"></div>
+            </div>
+            <hr>
+            <h4 style = "text-align: center">Player Information:</h4>
+            <div class="jumbotron" style="background-color:#f4a460">
+                <div id="playerInfo"></div>
+            </div>
+        </div>
+    </body>
+</html>
